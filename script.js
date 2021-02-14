@@ -29,7 +29,8 @@ const botIfYes = [
 const botIfNo = [
     "Désolé pour toi. Je ne sais pas quoi dire de plus",
     "Reviens me voir quand tu sera de bonne humeur",
-    "Je ne suis pas doué pour les consolation. Je ne suis qu'un robot"
+    "Je ne suis pas doué pour les consolation. Je ne suis qu'un robot",
+    ""
 ];
 
 const botConfused = "Je ne comprends pas. Peux-tu répéter stp?";
