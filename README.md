@@ -18,4 +18,20 @@
 * * If he finds a no he replies the same way if he finds a yes.
 * * If the robot doesn't find yes or no in the reply, it says it didn't understand and asks if he or she can say it again.
 * * After three tries without a yes or no, the robot gets angry and gives an irritated answer.
-* After this answer the chatbot has done its routine, says goodbye to the user and text area returns to disabled mode 
+* After this answer the chatbot has done its routine, says goodbye to the user and text area returns to disabled mode.
+
+## The steps we have made to make a chatbot
+![Chatbot](Pictures/chatbot1.jpg)
+### Setting up things
+* Work was asked to divide the tasks, but in the end it was a collaboration whereby everyone had a say in everything.
+* First and foremost, we formed a group through Discord and then brainstormed about who played which role and what the UI should look like.
+![Brainstorm](Pictures/brainstorm.jpg)
+
+### The research
+* We have been looking a lot for examples of chatbots that you can find on the internet.
+
+### The Team
+![Teams](Pictures/chatbotcrew.jpg)
+* Thierno Barry (gauche)
+* Housseyno Coulibaly (middle)
+* Jorge Vandereyken (right)
