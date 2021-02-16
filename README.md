@@ -4,7 +4,7 @@
 
 ## The mission
 
-* We have created a functional chatbot with Javascript language inside
+* We have created a functional chatbot with Javascript language inside.
 
 ### The features inside our chatbot
 
