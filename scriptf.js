@@ -21,7 +21,7 @@ const botIfNo = [
     
 ];
 
-const botConfused = "Je ne comprends pas. Peux-tu répéter stp?<br> N'oublies pas ";
+const botConfused = "Je ne comprends pas. Peux-tu répéter stp?<br> N'oublies pas qu'il faut un <br>'oui' ou 'non' dans ta reponse ";
 
 const botFurious = "Mec, tu es sûr que sais lire?";
 
