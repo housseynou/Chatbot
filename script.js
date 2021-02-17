@@ -1,15 +1,54 @@
-let user = document.getElementById("input");
-user.addEventListener('keydown', function(e){
+let user = document.getElementById("int");
+user.addEventListener("keydown", function(e){
     if(e.code === "Enter"){
         let userValue = user.value;
         user.value = "";
         document.getElementById('rep').innerHTML = reponse(userValue);
-       // console.log(`I typed '${userValue}'`)
+        //console.log(userValue);
     }
-})
+});
 
-function reponse(){}
+function dialog(){
+    let dial = document.getElementById('rep');
+    let usermsg = document.createElement('p');
+    usermsg.id = 'userSay';
+    dial.appendChild(usermsg);
 
+    let botmsg = document.createElement('p');
+    botmsg.id = 'botSay';
+    dial.appendChild(botmsg);
+
+    setTimeout(() => {
+        botmsg.innerText = '$(userSay.value';
+    },2000
+    )
+}
+function reponse(userReply){
+    userReply = "";
+    userReply = document.getElementById('userSay').value;
+    let botAnsw;
+    if(userReply.includes('oui')){
+        botAnsw = botIfYes[Math.floor(math.random() * botIfYes.length)];
+    }else if(userReply.includes('non')){
+        botAnsw = botIfNo[Math.floor(math.random() * botIfNo.length)];
+    }else{
+        botAnsw = botConfused;
+        botAnsw = 0;
+        while(botAnsw < 9){
+            botAnsw++;
+        }
+        botAnsw = botBye;
+    }
+    
+    dialog();
+    return botAnsw;
+}
+//function reponse(){
+ //   let sortie;
+ //   let userReply = document.getElementById('userSay').value;
+  //  sortie = ifYesorNo(userReply)
+ //   dialog();
+//}
 const botWelcom = [
     "Hey mon ami(e)", 
     "Bienvenue cher humain",
@@ -29,12 +68,23 @@ const botIfYes = [
 const botIfNo = [
     "Désolé pour toi. Je ne sais pas quoi dire de plus",
     "Reviens me voir quand tu sera de bonne humeur",
-    "Je ne suis pas doué pour les consolation. Je ne suis qu'un robot",
-    ""
+    "Je ne suis pas doué pour les consolation. Je ne suis qu'un robot"
+    
 ];
 
 const botConfused = "Je ne comprends pas. Peux-tu répéter stp?";
 
-const botFurious = "Mec, tu es sûr que sais lire?",
+const botFurious = "Mec, tu es sûr que sais lire?";
 
 const botBye = "Bye";
+
+let welcom = botWelcom[Math.floor(Math.random() * botWelcom.length)];
+let com = document.getElementById('rep').innerHTML = welcom;
+//console.log(com);
+    
+
+//function reponse(){
+//   
+//}
+
+//var position = chaine.search(/world/i)
